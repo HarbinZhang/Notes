@@ -10,7 +10,54 @@ var res = "";
 
 ```
 
+
+# Object
+- typeof  
+returns the name of the data type that follows it.
+var umbrella = {
+  color: "pink",
+  isOpen: false,
+  open: function() {
+    if (umbrella.isOpen === true) {       // why here is not this? 
+      retuen "The umbrella is already opened!";
+        } else {
+            umbrella.isOpen = true;
+            return "Julia opens the umbrella!";
+        }
+    },
+}
 # array
+### common
+```
+pop()       // remove the last one
+reverse()
+shift()     // remove the first and return it.
+unshift()   // adds one or more elements to the beginning of an array and returns the new length of the array.
+splice()    // replace or insert
+slice()     // copy from start to end.
+concat()    // merge two or more arrays.
+join()      // joins all elemnets of an array into a string and returns this string.  join('-')
+sort()      // sort all key/value pairs in place and return undefined.
+organize()  // 
+fill()      // fills all the elements of an array from a start index to an end index with a static value.
+copyWithin()// 
+
+```
+### forEach
+```
+function myfun(element, index, array){}
+arr.forEach(myfun)
+
+// eg:
+words.forEach(function(word, num, all){
+  console.log("Word " + num + " in " + all.toString() + " is " + word);
+});
+// and don't need to 3 parameters, just this order.
+
+```
+### map
+1. 1 argument
+2. return a new array
 ### splice
 While push() and pop() limit you to adding and removing elements from the end of an array, splice() lets you specify the index location to add new elements, as well as the number of elements you'd like to delete (if any).
 ```
