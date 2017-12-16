@@ -1,7 +1,25 @@
 
 
+# Points
+```
+// init variable and += 
+var res = null; // cannot work, 
+var res;   // undefined
+// should be 
+var res = "";
 
+```
 
+# array
+### splice
+While push() and pop() limit you to adding and removing elements from the end of an array, splice() lets you specify the index location to add new elements, as well as the number of elements you'd like to delete (if any).
+```
+var donuts = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller"];
+donuts.splice(1, 1, "chocolate cruller", "creme de leche"); // removes "chocolate frosted" at index 1 and adds "chocolate cruller" and "creme de leche" starting at index 1
+```
+Returns: "chocolate frosted"
+donuts array: ["glazed", "chocolate cruller", "creme de leche", "Boston creme", "glazed cruller"]
+### toUpperCase
 
 
 # Function
@@ -10,7 +28,31 @@ At first, it can be a bit tricky to know when something is either a parameter or
 
 In short, the parameter is: function(x,y)
 the argument is: function(1,2)
+### shadowing
+The variable will be changed because of function, and this variable is not the parameter.
+OR,
+the variable isn't announced.
+```
+var x = 1;
 
+function addTwo() {
+  x = x + 2;
+}
+
+addTwo();
+x = x + 1;
+console.log(x);
+
+var x = 1;
+
+function addTwo() {
+  var x = x + 2;
+}
+
+addTwo();
+x = x + 1;
+console.log(x);
+```
 
 
 # Conditionals
