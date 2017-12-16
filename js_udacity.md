@@ -2,6 +2,31 @@
 
 
 
+
+
+# Function
+### Parameters vs. Arguments
+At first, it can be a bit tricky to know when something is either a parameter or an argument. The key difference is in where they show up in the code. A parameter is always going to be a variable name and appears in the function declaration. On the other hand, an argument is always going to be a value (i.e. any of the JavaScript data types - a number, a string, a boolean, etc.) and will always appear in the code when the function is called or invoked.
+
+In short, the parameter is: function(x,y)
+the argument is: function(1,2)
+
+
+
+# Conditionals
+### Truthy values
+```
+true
+42
+"pizza"
+"0"
+"null"
+"undefined"
+{}
+[]
+```
+
+
 # Data type
 ### null, undefined, NaN
 - null  
