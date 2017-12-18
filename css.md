@@ -18,3 +18,29 @@ id attribute selector
 absolute: mm cm px in
 relative: % em vw vh
 ```
+### eg
+```
+<!DOCTYPE html>
+
+<!-- Instructions: Change the color of "Hello, world!" to green. -->
+
+<html>
+<head>
+	<title>Quiz - Hello, world!</title>
+    <style>
+		p {
+			color: blue;
+		}        
+        /* add CSS here */
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+	<h1>Hello, world!</h1>
+	<p>Are you ready for your first challenge?</p>
+	<p>Let's add some style to this webpage!</p>
+</body>
+</html>
+```
